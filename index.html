@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>TO Do</title>
+</head>
+
+<body>
+
+    <section>
+        <div class="container">
+
+            <div class="todoContent my-5 py-4">
+                <h2 class="text-center mb-4">Add Your Task...</h2>
+                <div class="form-group d-flex justify-content-center mt-5  align-items-center">
+                    <input type="text" class="form-control w-75 me-2" id="todo" placeholder="Write Here Now...">
+                    <button class="btn btn-info text-white d-flex justify-content-center align-items-center" id="addTodo"><i class="fs-4 fa-sharp fa-solid fa-plus"></i></button>
+                    <button class="btn btn-success text-white d-flex justify-content-center align-items-center d-none " id="updateBtn" onclick="updateTodo()"><i class="fs-5 fa-solid fa-pen-to-square"></i></button>
+                </div>
+                <p class="text-white mx-5 m-1 rounded-5 text-center bg-danger  d-none" id="error">Enter Your Task..</p>
+
+                <div class="todoList">
+                    <h2 class="text-center my-4 ">Todo List</h2>
+                    <div id="tableData">
+
+                    </div>
+
+                    <div class="d-none text-center text-danger" id="notodo">
+                        <h6>No Tasks Yet..</h6>
+                        <h6>Add your first Task</h6>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
